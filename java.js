@@ -1,16 +1,8 @@
+/*Help text
 const rock = 0;
 const paper = 1;
 const scissor = 2;
-
-
-
-
-
-//this listens to button clicks and sets playerselection
-//id=buttonrock .addEventListener("click", function() {});
-//let playerselection = ""
-
-
+*/
 
 function setPlayerChoice (choice) {
     let playerChoice =
@@ -19,24 +11,13 @@ return (playerChoice);
 }; 
 
 
-let roundwinner = [];
-roundwinner[1] = "Player";
-roundwinner[2] = "Player";
-roundwinner[3] = "Player";
-roundwinner[4] = "Player";
-roundwinner[5] = "Player";
-
-console.log (roundwinner);
-
 
     
 
+let playerselction10 = prompt ("What is your choice", "Rock/Paper/Scissor");
 
-
-
-
-let playerselction10 = "Rock";
-
+//this listens to button clicks and sets playerselection
+//id=buttonrock .addEventListener("click", function() {});
 
 //prompt("What is your choice", "Rock/Paper/Scissor");
 
@@ -73,8 +54,32 @@ function game(){
     if (playerselection1 === computerselection1) {
     return ("draw");
     }
+    else if (playerselection1 == "Rock" && computerselection1 == "Scissor"){
+        return ("Player Win with Rock")}
+    else if (playerselection1 == "Paper" && computerselection1 == "Rock"){
+        return ("Player Win with Paper") }
+    else if (playerselection1 == "Scissor" && computerselection1 == "Paper"){
+        return ("Player Win with Scissor") }
+    else if (playerselection1 == "Rock" && computerselection1 == "Paper"){
+        return ("Computer Win with Paper") }
+    else if (playerselection1 == "Scissor" && computerselection1 == "Rock"){
+        return ("Computer Win with Rock") }
     else {     
-        return ("player win")}
+        return ("Computer Win with Scissor")}
     }
 
-console.log (game());
+alert (game());
+
+
+
+//insert a function that records each result of the game and keep tabs of scores
+
+/* This is for logging result of each game
+let roundwinner = [];
+roundwinner[1] = "Player";
+roundwinner[2] = "Player";
+roundwinner[3] = "Player";
+roundwinner[4] = "Player";
+roundwinner[5] = "Player";
+
+console.log (roundwinner); */

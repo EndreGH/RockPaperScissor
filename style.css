@@ -1,0 +1,39 @@
+* {font-family: sans-serif;}
+* {background-color: darkslateblue;}
+* {color: aliceblue;}
+* {font-size: 40px;}
+* {font-weight: bolder;}
+* {box-sizing: border-box;}
+* {border: 2px solid red;}
+
+#select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    flex-direction: row;
+}
+#buttons {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    }
+#buttonrock {
+    display: flex;
+    border-left: 550px;
+    width: 250px;
+    height: 250px;
+}
+#buttonscissor {
+    display: flex;
+}
+#buttonpaper {
+    display: flex;
+}
+
+#selection {
+display: flex;
+}
+#playerselection100 {
+    display: flex;
+}
