@@ -75,7 +75,7 @@ alert (game());
 //insert a function that records each result of the game and keep tabs of scores
 
 /* This is for logging result of each game
-let roundwinner = [];
+const roundwinner = [];
 roundwinner[1] = "Player";
 roundwinner[2] = "Player";
 roundwinner[3] = "Player";
